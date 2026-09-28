@@ -100,7 +100,7 @@ export default function MoosaSmartnessPrank() {
             </div>
 
             <h1 className="text-2xl font-bold text-sky-950">
-              Do you think me (Moosa) is smarter than you? ✨
+              Do you think I (Moosa) is smarter than you? ✨
             </h1>
             <p className="text-sm text-sky-700">Select your answer carefully...</p>
 
