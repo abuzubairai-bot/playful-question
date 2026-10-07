@@ -218,7 +218,7 @@ export default function SmartnessPrank() {
 
           {/* Step 4: Final Certificate Confirmation */}
           {step === "confirmed" && (
-            <div className="space-y-6">
+            <div className="space-y-5">
               <div className="flex justify-center">
                 <CheckCircle2 className="w-16 h-16 text-emerald-500 animate-pulse" />
               </div>
@@ -232,18 +232,25 @@ export default function SmartnessPrank() {
                 <p>📌 <strong>Status:</strong> Unbreakable Contract!</p>
               </div>
 
-              <p className="text-xs text-sky-600">Thank you for your honesty! 📸✨</p>
+              <div className="pt-1 space-y-1">
+                <p className="text-xs text-sky-600">Thank you for your honesty! 📸✨</p>
+                <p className="text-xs font-medium text-sky-800 flex items-center justify-center gap-1 pt-1">
+                  Coded by <span className="font-bold text-sky-950">Moosa</span> ⭐
+                </p>
+              </div>
             </div>
           )}
         </motion.div>
       </div>
 
-      {/* Footer Credit */}
-      <footer className="z-10 pb-2">
-        <p className="text-xs font-medium text-sky-700/80 flex items-center justify-center gap-1">
-          Coded by <span className="font-bold text-sky-950">Moosa</span> ⭐
-        </p>
-      </footer>
+      {/* Outer Footer (Shows on steps 1, 2, and 3) */}
+      {step !== "confirmed" && (
+        <footer className="z-10 pb-2">
+          <p className="text-xs font-medium text-sky-700/80 flex items-center justify-center gap-1">
+            Coded by <span className="font-bold text-sky-950">Moosa</span> ⭐
+          </p>
+        </footer>
+      )}
     </main>
   );
 }
