@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [page, setPage] = useState(1);
@@ -39,7 +39,7 @@ export default function Home() {
           <h1 className="text-xl sm:text-2xl font-extrabold text-slate-800 leading-snug mb-3">
             Do you think we (Bilal &amp; Sufyan) are smarter than you?
           </h1>
-          <p class="text-xs text-slate-500 mb-8 font-medium">Select your answer carefully...</p>
+          <p className="text-xs text-slate-500 mb-8 font-medium">Select your answer carefully...</p>
 
           <div className="flex items-center justify-center gap-4 relative min-h-[60px]">
             <button
